@@ -4,4 +4,6 @@ Online kupovina
 Mogucnost pregleda kategorija, dodavanja istih u korpu (Add to cart), memorisanje u bookmark, promjena kolicine produkata i mnogo toga.
 Sve je sačuvano u local storage.
 
+NAPOMENA: Za funkcionisanje koda potrebno instalirati sve iz package.json
+
 Live demo: https://heyz-ecommerce.netlify.app/
