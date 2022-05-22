@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce</title>
+    <link rel="stylesheet" href="./src/style/nav.css">
+    <link rel="stylesheet" href="./src/style/heroSection.css">
+    <link rel="stylesheet" href="./src/style/categorySection.css">
+    <link rel="stylesheet" href="./src/style/previewProduct.css">
+    <link rel="stylesheet" href="./src/style/footer.css">
+    <script type="module" defer src="./src/script/controler.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/22f5ba3980.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="inner__nav container  paddingSections">
+            <p class="logo">Heyz <span>Shop</span></p>
+            <ul class="nav__links">
+                <li><a class="nav__link" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#products">Products</a></li>
+                <li class="submenu__link"><a class="nav__link" href="#">Categories</a>
+                <ul class="submenu__categories">
+                    <h4>Categories</h4>
+                    <li><a href="#mens">For men</a></li>
+                    <li><a href="#womens">For women</a></li>
+                    <li><a href="#elect">Technology</a></li>
+                    <li><a href="#others">Others</a></li>
+                </ul>
+                </li>
+
+                <button class="close__nav"><i class="fa-solid fa-xmark"></i></button>
+            </ul>
+            <ul class="nav__icons">
+                <li><button class="search"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                <li><button class="cart"><i class="fa-solid fa-basket-shopping"></i></button></li>
+                <li><button class="bookmarks"><i class="fa-solid fa-star"></i></button></li>
+            </ul>
+            <button class="mobile__burger"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+    </nav>
+    <div class="hero-section paddingSections" id="home">
+           <div class="hero__buttons">
+            <button id="hero-left">01</button>
+            <button id="hero-right">02</button>
+           </div>
+       <div class="first__slide hero-slide">
+        <div class="current__off">
+            50% off
+        </div>
+        <div class="hero__text">
+            <p>New trend 2022</p>
+            <h1>Best Selling Products Our all the World</h1>
+        </div>
+        <button class="start__shop btn" data-href="products">Shop now</button>
+       </div>
+       <div class="second__slide hero-slide">
+        <div class="hero__text">
+            <p>Sale up to 30%</p>
+            <h1>Best Selling Products Our all the World</h1>
+        </div>
+        <button class="start__shop btn" data-href="products">Shop now</button>
+       </div>
+    </div>
+
+    <div class="prednosti">
+        <div class="inner__prednosti container paddingSections">
+            <div class="box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Free shiping <span>Free Shipping for orders over £130
+                </span></h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <h3>Money guarantee <span>Within 30 days for an exchange.
+                </span>
+                </h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Flexible payment <span>Pay with Multiple Credit Cards
+                </span></h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-headphones"></i>
+                <h3>Online support <span>24 hours a day, 7 days a week
+                </span></h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="offer__section container">
+        <div class="offer__row paddingSections">
+            <div class="box men__box">
+                <h4>mens collection</h4>
+                <p>New looks arrivad</p>
+                <button class="start__shop btn" data-href="men__category">Shop now</button>
+                <img src="./src/img/man.png" alt="">
+            </div>
+            <div class="box elect__box">
+                <h4>electronics</h4>
+                <p>New technology</p>
+                <button class="start__shop btn" data-href="elect__category">Shop now</button>
+                <img src="./src/img/elect.png" alt="">
+            </div>
+            <div class="box woman__box">
+                <h4>womans collection</h4>
+                <p>New technology</p>
+                <button class="start__shop btn" data-href="women__category">Shop now</button>
+                <img src="./src/img/woman.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+  <div class="all__products__big__container paddingSections">
+    <div class="all__products container products" id="products">
+        <div class="first__category category__container">
+            <h1>Mens <span>category</span></h1>
+            <div class="category men__category" data-category="men's clothing" id="mens">
+    
+            </div>
+        </div>
+        <div class="second__category category__container">
+            <h1>Womens <span>category</span></h1>
+            <div class="category women__category" data-category="women's clothing" id="womens">
+
+            </div>
+        </div>
+        <div class="third__category category__container">
+            <h1>Electronics <span>category</span></h1>
+            <div class="category elect__category" data-category="electronics" id="elect">
+
+            </div>
+        </div>
+        <div class="four__category category__container">
+            <h1>others <span>category</span></h1>
+            <div class="category others" data-category="others" id="others">
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="add__overlay transform">
+        <div class="addToCart__section">
+            <div class="top">
+                <h1>Shopping cart</h1>
+                <button id="closeAddToCart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="added__products">
+            
+            </div>
+
+            <div class="bottom">
+                <div class="top">
+                    <h3>Total</h3>
+                    <p class="total__price">3400$</p>
+                </div>
+                <button class="buy">Buy</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="adds paddingSections">
+        <div class="adds__text container">
+            <h1>Modern <span>men's stylish</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum!</p>
+        </div>
+    </div>
+
+
+    <div class="preview__product__overlay hidden">
+        <button class="close__preview"><i class="fa-solid fa-xmark"></i></button>
+
+        <div class="preview__product">
+            <div class="preview__product__image">
+                <img src="./src/img/testproduct.jpg" data-name="image">
+            </div>
+            <div class="preview__product__right">
+            
+                <div class="preview__product__description">
+                    <h2 class="preview__product__title" data-name="title">Straw Shopeer Bag</h2>
+                    <p class="preview__product__price" data-name="price">$12.00</p>
+                    <p class="preview__product__shortdesc" data-name="description">The Iconic Silhouette At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis...
+                    </p>
+                </div>
+                <div class="preview__product__bottom">
+                    <input type="number" min="1" id="" class="preview__product__quantity">
+                    <button class="addToCart fromPreview">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="white__section container">
+        <h1>Make the best purchase on this site
+        </h1>
+    </div>
+
+    <footer class="paddingSections">
+        <div class="inner__footer container">
+            <div class="footer__col">
+                <div class="col__top">
+                    <p class="logo">Heyz <span>Shop</span></p>
+                </div>
+                <ul class="footer__list">
+                    <li>Heyz Dev is a Perfect Choice for Your Online Store.</li>
+                    <li><i class="fa-solid fa-phone"></i> <a class="contact" href="tel:+18429405">+ (387) 60 999 9999</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a class="contact" href="mailto:hazimba123@gmail.com">hazimba123@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="col__top">
+                    <p>Benefits</p>
+                </div>
+                <ul class="footer__list">
+                    <li>Fast delivery</li>
+                    <li>Support 24/7</li>
+                    <li>Money back</li>
+                    <li>Discounts</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="col__top">
+                    <p>Categories</p>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="#mens">For men's</a></li>
+                    <li><a href="#womens">For women's</a></li>
+                    <li><a href="#elect">Electronics</a></li>
+                    <li><a href="#others">Others</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="col__top">
+                    <p>Follow Us</p>
+                </div>
+                <ul class="footer__list social__media">
+                    <li><a href="https://www.facebook.com/hazim.tulumovic.9/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/hazimm_t/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/hejzbh"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="bookmark__overlay transform">
+        <div class="bookmark">
+            <div class="top">
+                <h1>Bookmark</h1>
+                <button class="close__bokmark"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="bookmark__list">
+            <!--
+                <li>
+                    <img src="./src/img/testproduct.jpg" alt="">
+                    <div class="bookmark__desc">
+                        <div class="left">
+                            <h4 class="bookmark__title">Majica</h4>
+                            <p class="bookmark__price">300$</p>
+                        </div>
+                        <button class="unbookmark"><i class="fa-regular fa-bookmark"></i></button>
+                    </div>
+                </li>
+                -->
+            </ul>
+            <div class="panagation__buttons">
+                <!--
+                <button class="panagation__bookmark__left">left</button>
+                <button class="panagation__bookmark__right">right</button>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <!--
+                    <div class="product">
+                    <div class="image">
+                        <div class="product-interface">
+                            <button id="quickView"><i class="fa-solid fa-eye"></i></button>
+                            <button id="addToCart"><i class="fa-solid fa-cart-arrow-down"></i></button>
+                        </div>
+                        <img src="./src/img/testproduct.jpg" alt="">
+                    </div>
+                    <div class="product-description">
+                        <p class="product__title">Mobile</p>
+                        <div class="product__price"><s class="old__price">$11</s><span class="new__price">$6</span></div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                    <div class="added__product">
+                    <img src="./src/img/testproduct.jpg" alt="">
+                    <div class="added__product__desc">
+                        <h4 class="added__product__title">Jakna</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="added__product__price">30$</p>
+                        <div class="added__product__options">
+                            <input type="number" min="1" id="" class="added__product__quantity">
+                            <button class="added__product__delete">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    -->
+</body>
+</html>

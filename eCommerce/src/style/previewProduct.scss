@@ -1,0 +1,122 @@
+// PREVIEW PRODUCT
+
+
+.preview__product__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background: rgba($color: #000000, $alpha: 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .close__preview {
+        top: 4em;
+        position: absolute;
+        background: transparent;
+        font-size: 35px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        color: red;
+
+        &:hover {
+            animation: rotate 0.3s ease;
+        }
+    }
+
+    .preview__product {
+        width: 100%;
+        max-width: 70%;
+        min-height: 60%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow-y: scroll;
+
+        @media(max-width:900px){
+            max-width: 95% !important;
+            min-height: 100% !important;
+            flex-direction: column;
+        }
+
+        .preview__product__image {
+            padding: 3em;
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            @media(max-width:900px){
+               flex-basis: 100% !important;
+               width: 100%;
+            }
+            img {
+                width: 100%;
+                max-width: 350px;
+
+                @media(max-width:900px){
+                    max-width: 150px;
+                }
+            }
+        }
+
+        .preview__product__right {
+            padding: 2.5em;
+
+            .preview__product__price {
+                padding: 1.5em 0;
+                font-size: 20px;
+            }
+
+            .preview__product__shortdesc {
+                color: gray;
+                padding-bottom: 2.5em;
+            }
+
+
+            .preview__product__bottom {
+                display: flex;
+                align-items: center;
+
+                input {
+                    background: #e5e5e5 none repeat scroll 0 0;
+                    border: medium none;
+                    border-radius: 3px;
+                    color: #6f6f6f;
+                    font-size: 15px;
+                    font-weight: normal;
+                    height: 40px;
+                    padding: 0 5px 0 10px;
+                    text-align: center;
+                    width: 60px;
+                    border: 0;
+                    outline: 0;
+                    margin-right: 10px;
+                }
+
+                .addToCart {
+                    background: #000;
+                    padding: .8em 1.5em;
+                    border: 0;
+                    outline: 0;
+                    cursor: pointer;
+                    font-family: 'Poppins';
+                    color: #fff;
+                    border-radius: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.hidden {
+    display: none;
+}
